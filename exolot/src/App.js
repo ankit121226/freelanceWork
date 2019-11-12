@@ -25,7 +25,7 @@ class App extends Component {
                     <Switch >
                     <Route
                         path="/home-one"
-                        component={HomeOne} // chnaging
+                        component={HomeOne}
                     />/
                     
                     <Route
@@ -44,5 +44,3 @@ class App extends Component {
   }
 }
 export default App;
-
-//testing git control
