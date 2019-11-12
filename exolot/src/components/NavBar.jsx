@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container,NavDropdown} from "react-bootstrap";
 
 import SideNav from  "../components/SideNav";
 
@@ -51,6 +51,8 @@ class NavBar extends Component {
                             duration={800}
                         >
                             <span>M</span>echMee
+                            {/* <div> +91 8050624407</div>
+                            <div>mechmee2k18@gmail.com</div> */}
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle
@@ -74,21 +76,20 @@ class NavBar extends Component {
                             </Nav.Item>
 
                             <Nav.Item>
-                                <Link
-                                    activeClass="active"
-                                    to="about"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={800}
-                                    className="nav-link"
-                                    onClick={this.closeNavbar}
-                                >
-                                    About
-                                </Link>
+                                <NavDropdown title="Course Details" id="basic-nav-dropdown">
+                                    <NavDropdown.Item href="#">ENGINEERING</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">MBBS</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">BDS</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">BAMS</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">BHMS</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">PHARMACY</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">BPT</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">NURSING</NavDropdown.Item>
+                                    <NavDropdown.Item href="#">MBA</NavDropdown.Item>
+                                </NavDropdown>
                             </Nav.Item>
 
-                            <Nav.Item>
+                            {/* <Nav.Item>
                                 <Link
                                     activeClass="active"
                                     to="services"
@@ -176,7 +177,7 @@ class NavBar extends Component {
                                 >
                                     Contact
                                 </Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                                 
                             <Nav.Item>
                                 {/* SideNav: src/components/SideNav */}

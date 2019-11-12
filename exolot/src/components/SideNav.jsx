@@ -72,15 +72,15 @@ export class SideNav extends Component {
 
 }
 SideNav.defaultProps = {
-    logotext: ".Exo",
-    logotextspan: "LOT.",
-    content: "Exolot have much planned for the future, working with great clients and continued software development. If you'd like to join our team, then we'd also love to hear from you.",
-    locationbolt: "27 Division St",
-    locationnormal: "New York, NY 10002, USA",
-    phonebolt: "+0 (321) 984 754",
+    logotext: "M",
+    logotextspan: "ECHMEE",
+    content: "Mechmee comes as a source of profound knowledge over large number of educational institutions. Even, we are grandiose in providing information about different courses. As a matter of fact, we work as a team to guide perfectly about to choose the desired institution. There are certain undertakings, that we provide. We highly recommend our candidates to seek information on our program of test preparation. It is quite remarkable to maintain a proper follow up, and we give the best resources making your desires quenchable.",
+    locationbolt: "BTM Layout Stage 2, Bangalore",
+    locationnormal: "Karnataka - 560076",
+    phonebolt: "+91 8050624407",
     phonenormal: "Give us a call",
-    mailbolot: "exolot@gmail.com",
-    mailnormal: "24/7 online support",
+    mailbolot: "mechmee2k18@gmail.com",
+    // mailnormal: "24/7 online support",
     facebooklink: "#",
     twitterlink: "#",
     instagramlink: "#",
