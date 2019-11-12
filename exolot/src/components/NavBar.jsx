@@ -50,7 +50,7 @@ class NavBar extends Component {
                             offset={-70}
                             duration={800}
                         >
-                            <span>E</span>xolot
+                            <span>M</span>echMee
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle

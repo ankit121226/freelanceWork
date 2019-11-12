@@ -220,7 +220,7 @@ About.defaultProps ={
 
     
     skillToptitle: "About",
-    skillToptitlespan: "Exolot",
+    skillToptitlespan: "MechMee",
     skillTitle: "We Are Digital",
     skillTitlespan: "Marketing & Branding",
     skillContent: "Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida.",

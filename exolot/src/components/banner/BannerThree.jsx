@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Icofont from "react-icofont";
+// import Icofont from "react-icofont";
 import PropTypes from "prop-types";
 import "react-modal-video/css/modal-video.min.css";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 
 class BannerThree extends Component {
   constructor() {
@@ -35,7 +35,7 @@ class BannerThree extends Component {
                     {this.props.leftbtn}
                   </a>
 
-                  <ModalVideo
+                  {/* <ModalVideo
                     channel="youtube"
                     isOpen={this.state.isOpen}
                     videoId={this.props.videoId}
@@ -44,10 +44,11 @@ class BannerThree extends Component {
                         isOpen: false
                       })
                     }
-                  />
-                  <button onClick={this.openModal} className="video-btn">
+                  /> */}
+                  {/* <button onClick={this.openModal} className="video-btn">
                     <Icofont icon="icofont-play-alt-2" /> {this.props.videobtn}
-                  </button>
+                  </button> */}
+                  {/* removed Watch video button link */}
                 </div>
               </div>
             </div>
