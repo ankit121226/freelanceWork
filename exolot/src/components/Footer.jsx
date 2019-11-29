@@ -41,7 +41,7 @@ Footer.PropsTypes = {
   footercopyrightText2: PropTypes.string
 };
 Footer.defaultProps = {
-  copyrightText: "Copyright @ 2019 Exolot. All rights reserved",
+  copyrightText: "Copyright @ 2019 MechMee. All rights reserved",
   footercopyrightLink1: "#",
   footercopyrightText1: "Terms & Conditions ",
   footercopyrightLink2: "#",

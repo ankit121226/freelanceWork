@@ -14,8 +14,8 @@ import BannerThree from "../components/banner/BannerThree";
 // import Feadback from "../components/Feadback";
 // import News from "../components/News";
 // import Work from "../components/Work";
-// import ContactUs from "../components/ContactUs";
-// import Footer from "../components/Footer";
+import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
 import ScrollUpBtn from "../components/ScrollUpBtn";
 
 class HomeThree extends Component {
@@ -49,9 +49,9 @@ class HomeThree extends Component {
                 {/* Work: src/components/Work */}
                 {/* <Work /> */}
                 {/* ContactUs: src/components/ContactUs */}
-                {/* <ContactUs /> */}
+                <ContactUs />
                 {/* Footer: src/components/Footer */}
-                {/* <Footer /> */}
+                <Footer />
                 {/* ScrollUpBtn: src/components/ScrollUpBtn */}
                 <ScrollUpBtn />
             </React.Fragment>
