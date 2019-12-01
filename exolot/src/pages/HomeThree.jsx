@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 //Components List
 import NavBar from "../components/NavBar";
-import BannerThree from "../components/banner/BannerThree";
+import BannerOne from "../components/banner/BannerOne";
+// import BannerThree from "../components/banner/BannerThree";
 // import Subscribe from "../components/Subscribe";
 // import Welcome from "../components/Welcome";
 // import About from "../components/About";
@@ -25,7 +26,8 @@ class HomeThree extends Component {
                 {/* NavBar: src/components/NavBar */}
                 <NavBar />
                 {/* BannerThree: src/components/banner/BannerThree */}
-                <BannerThree toptitle="Mechmee" />
+                {/* <BannerThree toptitle="Mechmee" /> */}
+                <BannerOne  toptitle="Mechmee"/>
                 {/* Subscribe: src/components/Subscribe */}
                 {/* <Subscribe /> */}
                 {/* Welcome: src/components/Welcome */}

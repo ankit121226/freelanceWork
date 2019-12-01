@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import OwlCarousel from "react-owl-carousel3";
-import Icofont from "react-icofont";
+// import Icofont from "react-icofont";
 import PropTypes from "prop-types";
 import VisibilitySensor from "react-visibility-sensor";
 import "react-modal-video/css/modal-video.min.css";
@@ -76,13 +76,13 @@ class HomeSlides extends Component {
                                                 {homeslides.leftbtn}
                                             </a>
                                             
-                                            <button onClick={this.openModal} className={
+                                            {/* <button onClick={this.openModal} className={
                                                     isVisible
                                                         ? "video-btn animated fadeInDown slow opacityOne"
                                                         : "video-btn opacityZero"
                                                 }>
                                                 <Icofont icon="icofont-play-alt-2" /> {homeslides.videobtn}
-                                            </button>
+                                            </button> */}
                                         </div>
                                     )}
                                     </VisibilitySensor>
@@ -193,42 +193,43 @@ HomeSlides.defaultProps = {
     homeslidesData: [
         {
             bgImgClass: "main-banner item-bg-one",
-            toptitle: "WE ARE CREATIVE",
-            mainlefttitle: "THE BEST",
-            mainspantitle: "DIGITAL",
-            mainrighttitle: "AGENCY",
+            toptitle: "MechMee",
+            mainlefttitle: "Find about ",
+            mainspantitle: "40,000 ",
+            mainrighttitle: "colleges & 500 exams",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-            leftbtn: "Get Started",
-            leftbtnlink: "#",
-            videobtn: "Watch Now",
-            videoId: "vr0qNXmkUJ8",
+            "Education has one of its fundamental goals, to impart the culture with best resources from generation to generation. It escalates the best sense of realization of self-potential and latent talents of an individual. With this ideology, an education portal named MechMee came into light. MechMee- India’s one of the rising education portal was launched on 21 March, 2013. Since, its opening, the portal has been excelling in providing good knowledge regarding education. It is praiseworthy to note that within a span of two years, it has built a strong consolidating platform to abide by the knowledge for taking admissions in well deserved colleges. As a matter of fact there is no denial, to accept that it provides profound information on a very large scale.",
+          leftbtn: "Coming Soon",
+          leftbtnlink: "#",
+          videoId: "vr0qNXmkUJ8",
+          videobtn: "Watch Video"
         },
         {
             bgImgClass: "main-banner item-bg-two",
-            toptitle: "WE ARE CREATIVE",
-            mainlefttitle: "THE BEST",
-            mainspantitle: "DIGITAL",
-            mainrighttitle: "AGENCY",
+            toptitle: "MechMee",
+            mainlefttitle: "Find about ",
+            mainspantitle: "40,000 ",
+            mainrighttitle: "colleges & 500 exams",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-            leftbtn: "Get Started",
-            leftbtnlink: "#",
-            videobtn: "Watch Now",
-            videoId: "vr0qNXmkUJ8",
+            "Education has one of its fundamental goals, to impart the culture with best resources from generation to generation. It escalates the best sense of realization of self-potential and latent talents of an individual. With this ideology, an education portal named MechMee came into light. MechMee- India’s one of the rising education portal was launched on 21 March, 2013. Since, its opening, the portal has been excelling in providing good knowledge regarding education. It is praiseworthy to note that within a span of two years, it has built a strong consolidating platform to abide by the knowledge for taking admissions in well deserved colleges. As a matter of fact there is no denial, to accept that it provides profound information on a very large scale.",
+          leftbtn: "Coming Soon",
+          leftbtnlink: "#",
+          videoId: "vr0qNXmkUJ8",
+          videobtn: "Watch Video"
         },
         {
             bgImgClass: "main-banner item-bg-three",
-            toptitle: "WE ARE CREATIVE",
-            mainlefttitle: "THE BEST",
-            mainspantitle: "DIGITAL",
-            mainrighttitle: "AGENCY",
+            toptitle: "MechMee",
+            toptitle: "MechMee",
+            mainlefttitle: "Find about ",
+            mainspantitle: "40,000 ",
+            mainrighttitle: "colleges & 500 exams",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-            leftbtn: "Get Started",
-            leftbtnlink: "#",
-            videobtn: "Watch Now",
-            videoId: "vr0qNXmkUJ8",
+            "Education has one of its fundamental goals, to impart the culture with best resources from generation to generation. It escalates the best sense of realization of self-potential and latent talents of an individual. With this ideology, an education portal named MechMee came into light. MechMee- India’s one of the rising education portal was launched on 21 March, 2013. Since, its opening, the portal has been excelling in providing good knowledge regarding education. It is praiseworthy to note that within a span of two years, it has built a strong consolidating platform to abide by the knowledge for taking admissions in well deserved colleges. As a matter of fact there is no denial, to accept that it provides profound information on a very large scale.",
+          leftbtn: "Coming Soon",
+          leftbtnlink: "#",
+          videoId: "vr0qNXmkUJ8",
+          videobtn: "Watch Video"
         }
     ]
 };
