@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
-import { Navbar, Nav, Container,NavDropdown, ButtonToolbar, DropdownButton, Dropdown} from "react-bootstrap";
-import  DefaultStyle from './CustomNavBar'
+import { Navbar, Nav, Container,NavDropdown, Dropdown} from "react-bootstrap";
+import  DefaultStyle from './CustomNavBar';
+import history from '../utils/history';
 
 import SideNav from  "../components/SideNav";
 
 class NavBar extends Component {
+    Courses = ['MEDICAL', 'AYURVEDA', 'PHARMACY','ENGINEERING', 'PHYSIOTHRAPY' ];
     componentDidMount() {
         let elem = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
@@ -31,6 +33,54 @@ class NavBar extends Component {
             document.getElementById("collaspe-btn").click();
         }
     }
+
+    HandleClick = (e) =>{
+        const courseName  = e.currentTarget.innerText;
+        debugger
+        switch(courseName){
+            case 'MEDICAL':
+            history.push({
+                pathname: '/medical',
+                state: {
+                  imgsrc: '',
+                }
+              })
+              break;
+              case 'AYURVEDA':   
+            history.push({
+                pathname: '/ayurveda',
+                state: {
+                  imgsrc: '',
+                }
+              })
+              break;
+              case 'PHARMACY':
+            history.push({
+                pathname: '/pharmacy',
+                state: {
+                  imgsrc: '',
+                }
+              })
+              break;
+              case 'PHYSIOTHRAPY':
+            history.push({
+                pathname: '/physiothrapy',
+                state: {
+                  imgsrc: '',
+                }
+              })
+              break;
+              case 'ENGINEERING':
+            history.push({
+                pathname: '/enginering',
+                state: {
+                  imgsrc: '',
+                }
+              })
+              break;
+        }
+
+     }
     render() {
         return (
          <DefaultStyle>
@@ -183,13 +233,19 @@ class NavBar extends Component {
                             </NavDropdown>
 
                             <NavDropdown title="Courses">
-                                {['left'].map(direction => (
+                              {this.Courses.map((val, ind)=>{
+                                  return(
+                                    <Dropdown.Item eventKey={ind} onClick={(e)=>this.HandleClick(e)}>{val}</Dropdown.Item>
+                                  )
+                              })}
+                                {/* {['left'].map(direction => (
                                 <NavDropdown
                                     drop={direction}
                                     variant="secondary"
                                     title={'MEDICAL'}
                                     id={`dropdown-button-drop-${direction}`}
                                     key={direction}
+                                    onClick={(e)=>this.HandleClick(e)}
                                 >
                                     <Dropdown.Item eventKey="1">MBBS</Dropdown.Item>
                                     <Dropdown.Item eventKey="2">BDS</Dropdown.Item>
@@ -249,7 +305,7 @@ class NavBar extends Component {
                                     <Dropdown.Item eventKey="2">ECE</Dropdown.Item>
                                     <Dropdown.Item eventKey="3">ELECTRICAL</Dropdown.Item>
                                 </NavDropdown>
-                                ))}
+                                ))} */}
                                 
                             </NavDropdown>
                             

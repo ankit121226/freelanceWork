@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Router} from 'react-router-dom';
 import Page from "react-page-loading";
-
+import history from './utils/history';
 //Package CSS & JS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -22,21 +22,43 @@ class App extends Component {
         <div className="App">
             <div>
                 <Page loader={"bubble-spin"} color={"#71c21b"} size={9}>
-                    <Switch >
+            <Router history={history}>
+                <Switch >
                     <Route
-                        path="/home-one"
+                       exact path="/home-one"
                         component={HomeOne}
                     />/
                     
                     <Route
-                        path="/home-two"
+                       exact path="/home-two"
                         component={HomeTwo}
                     />
                     <Route
-                        path="/"
+                       exact path="/"
                         component={HomeThree}
                     />
+                     <Route
+                       exact path="/medical"
+                        component={HomeTwo}
+                    />
+                    <Route
+                       exact path="/ayurveda"
+                        component={HomeTwo}
+                    />
+                    <Route
+                       exact path="/pharmacy"
+                        component={HomeTwo}
+                    />
+                    <Route
+                       exact path="/physiothrapy"
+                        component={HomeTwo}
+                    />
+                    <Route
+                       exact path="/enginering"
+                        component={HomeTwo}
+                    />
                     </Switch>
+                </Router>
                 </Page>
             </div>
       </div>
