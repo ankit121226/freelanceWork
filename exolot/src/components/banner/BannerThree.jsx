@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Icofont from "react-icofont";
+// import Icofont from "react-icofont";
 import PropTypes from "prop-types";
 import "react-modal-video/css/modal-video.min.css";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 
 class BannerThree extends Component {
   constructor() {
@@ -35,7 +35,7 @@ class BannerThree extends Component {
                     {this.props.leftbtn}
                   </a>
 
-                  <ModalVideo
+                  {/* <ModalVideo
                     channel="youtube"
                     isOpen={this.state.isOpen}
                     videoId={this.props.videoId}
@@ -44,10 +44,11 @@ class BannerThree extends Component {
                         isOpen: false
                       })
                     }
-                  />
-                  <button onClick={this.openModal} className="video-btn">
+                  /> */}
+                  {/* <button onClick={this.openModal} className="video-btn">
                     <Icofont icon="icofont-play-alt-2" /> {this.props.videobtn}
-                  </button>
+                  </button> */}
+                  {/* removed Watch video button link */}
                 </div>
               </div>
             </div>
@@ -94,12 +95,12 @@ BannerThree.defaultProps = {
   animationImg4: require("../../assets/img/5.png"),
   animationImg5: require("../../assets/img/6.png"),
   toptitle: "WE ARE CREATIVE",
-  mainlefttitle: "THE BEST",
-  mainspantitle: "DIGITAL",
-  mainrighttitle: "AGENCY",
+  mainlefttitle: "Find about ",
+  mainspantitle: "40,000 ",
+  mainrighttitle: "colleges & 500 exams",
   content:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-  leftbtn: "Get Started",
+    "Education has one of its fundamental goals, to impart the culture with best resources from generation to generation. It escalates the best sense of realization of self-potential and latent talents of an individual. With this ideology, an education portal named MechMee came into light. MechMee- India’s one of the rising education portal was launched on 21 March, 2013. Since, its opening, the portal has been excelling in providing good knowledge regarding education. It is praiseworthy to note that within a span of two years, it has built a strong consolidating platform to abide by the knowledge for taking admissions in well deserved colleges. As a matter of fact there is no denial, to accept that it provides profound information on a very large scale.",
+  leftbtn: "Coming Soon",
   leftbtnlink: "#",
   videoId: "vr0qNXmkUJ8",
   videobtn: "Watch Video"

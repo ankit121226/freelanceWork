@@ -23,6 +23,7 @@ export class ContactUs extends Component {
                 headers: { Accept: "application/json" }
             })
             .then(function(response) {
+                debugger
                 document.getElementById("contactForm").reset();
                 that.setState({
                     successMsg: "We received your submission"
@@ -177,9 +178,9 @@ ContactUs.PropsTypes = {
 ContactUs.defaultProps = {
     sectionTitle: "Contact",
     sectionTitleSpan: "Us",
-    sectionContent: "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    sectionContent: "", // text can be added below contacy us 
     title: "Get in Touch",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    content: "",
     fblink: "#",
     twitterlink: "#",
     instagramlink: "#",
@@ -189,27 +190,27 @@ ContactUs.defaultProps = {
             boxicon: "icofont-location-pin",
             boxtitle: "Address",
             boxitem1link: "#",
-            boxitem1: "Exercisplan 4, 111 49",
+            boxitem1: "BTM Layout Stage 2, Bangalore",
             boxitem2link: "#",
-            boxitem2: "Stockholm, Sweden",
+            boxitem2: "Karnataka - 560076",
 
         },
         {
             boxicon: "icofont-mail",
             boxtitle: "Email",
             boxitem1link: "#",
-            boxitem1: "Info@exolot.com",
+            boxitem1: "mechmee2k18@gmail.com",
             boxitem2link: "#",
-            boxitem2: "support@exolot.com",
+            boxitem2: "",
 
         },
         {
             boxicon: "icofont-phone",
-            boxtitle: "Phone",
+            boxtitle: "Mobile",
             boxitem1link: "#",
-            boxitem1: "+44 4587 458",
+            boxitem1: "+91 8050624407",
             boxitem2link: "#",
-            boxitem2: "+44 4587 458",
+            boxitem2: "",
 
         }
     ]
