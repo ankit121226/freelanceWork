@@ -102,7 +102,7 @@ class NavBar extends Component {
                             offset={-70}
                             duration={800}
                         >
-                            <span>M</span>echMee
+                           <span>M</span><span className="logoColor">echMee</span>
                             {/* <div> +91 8050624407</div>
                             <div>mechmee2k18@gmail.com</div> */}
                         </Link>

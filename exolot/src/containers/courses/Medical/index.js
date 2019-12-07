@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Icofont from "react-icofont";
 import PropTypes from "prop-types";
 import SearchPage from '../../../components/SearchBar'
+import StateDropDowm from '../../../components/StateDropDown';
+import { Row, Col, Container} from "react-bootstrap";
 class MedicalCourse extends Component {
     render() {
         //Welcome loop start
@@ -21,12 +23,22 @@ class MedicalCourse extends Component {
                 <section className="welcome-area ptb-100">
                     <div className="container">
                         <div className="section-title">
-                            {/* <SearchPage/> */}
+                           
                             {/* <span>{this.props.sectiontopTitle}</span> */}
                             {/* <h2>{this.props.sectionTitle} <b>{this.props.sectionTitleSpan}</b></h2> */}
                             <p>{this.props.sectionContent}</p>
                         </div>
-
+                        <Container>
+                            <Row>
+                                <Col  sm = {12} xs={12} lg={8}>
+                                    <SearchPage/>
+                                </Col>
+                                <Col  sm = {12} xs={12} lg={{span:3 , offset: 1}}>
+                                    <StateDropDowm/>
+                                </Col>
+                            </Row>
+                        </Container>
+                        
                         <div className="row">
                             {welcomedata}
                         </div>
@@ -50,7 +62,7 @@ MedicalCourse.defaultProps = {
     sectionTitle: "Welcome to",
     sectionTitleSpan: "Exolot",
     sectionContent:
-        "Lists of Medical Collleges",
+        "Lists of Collleges",
 
         welcomesData: [
         {
